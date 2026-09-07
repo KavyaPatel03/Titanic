@@ -4,8 +4,8 @@ Exploratory Data Analysis and Data Cleaning of the Titanic Dataset using Pandas,
 Project: Exploratory Data Analysis (EDA) on Titanic Dataset
 # Description about the Dataset 
 The columns in the dataset are : 
-**Show ID , Type , Title , Director , Cast , Country , Date Added , Release Year , Rating , Duration , Listed In , Description.**
-The dataset contains the metadata of the android applications available on the Google Play Store.
+**Passenger ID , Survived , Pclass , Name , Sex , Age , Sibsp , Parch , Ticket ,  Fare , Cabin , Embarked.**
+The dataset contains the metadata of the Passengers on the titanic Cruise.
 # Objective of this EDA
 * **To Clean the data and do feature engineering**
 * **To do exploratory data analysis**
@@ -20,33 +20,17 @@ The dataset contains the metadata of the android applications available on the G
 * **Do the EDA by answering the questions**
 * **Visualize the result into graphs and charts using matplotlib**
 # Observation from the data
-* **The above answer show that Netflix has produced 4265 movies in recent years whereas it has only produced 1969 TV Shows. So, this clearly shows that Netflix has been prioritizing Movies over TV shows.**
-* **In the years 1947,1954,1955,1956,1959,1964,1966,1970 the least amount of films are made and that is 1 movie.**
-* **The maximum duration of a TV show is 15 Seasons and the name of the show is Supernatural on Netflix.**
-* **In the last decade, 1734 Movies were made by Netflix.**
-* **The adult rating(TV-MA) has been given to the most amount of TV Show on Netflix.**
-* **In the year 2018 most amount adult rated movies were produced.**
-* **The most popular director of India is David Dhawan as he has directed most number of movies.**
-* **The smallest movie on Netflix is of 10 minutes.**
-* **In 2020, 19 TV Shows were released by Netflix.**
-* **14 unique types of ratings exists in Netflix.**
-* **United States gives more emphasis on Movies rather than TV Shows.**
-* **India makes lengthier movies than United states.**
-* **There are no TV Shows released on February 29 of any of the year present in the data.**
-* **The above result shows that 99 minutes is the average duration of the movies.**
-* **The most common rating given to Movies and TV Shows is TV-MA(Adult Rating) in the dataset.**
-* **USA has produced the most number of Movies.**
-* **USA has produced the most number of TV Shows.**
-* **The earliest year of release is 1925 and the latest year of release is 2020.**
-* **Most number of TV Shows and Movies were released in December.**
-* **The most common duration of Movies is 90 minutes.**
-* **The most common number of seasons is 1 season.**
-* **There are 3301 different directors in the dataset.**
-* **The most common release year for movies is 2017 and the most common release year for TV Show is 2019.**
+* **The above result shows that how many passengers survived(1) and how many didn't survived(0).Only 38.38% people survived which is considered very bad as the Titanic was considered as one of the most advanced and safest ship of that time.**
+* **The above result shows that how many male and how many female has survived.Only 34.76% female died during the breakdown of the Titanic which is considered a small amount in comparision to the percentage of male passesnger died which is 81.10%.It is almost 3 times the number of death of female passengers.
+This analysis shows that female were given more priority at the time of breakdown above men.**
+* **From the result of question 3, we can assess that even if the number of passenger survived from class 3 is higher than class 2 but in reality the percentage of people didn't survived in the class 3 is around 75% whereas the percentage of people didn't survived in the class 2 is 53% which is a very important detail.**
+* **We can see, in the first class only 3 women died whereas number of men died in the first class is 77 which is 26 times more than number of females died and the conditions were even worse in the second and third class in terms of numbers.In the case of survival, women were given priority over men as we see than number of women survived is twice the number of men survived.So, at the end we can draw the conclusion that it is more beneficial to travel with the first class as it comes with priority.**
+* **It shows the average fare,the highest fare charged and the least fare charged.It shows you the difference as it would be obvious that the highest fare would be of 1s class and the lowest will be of the 3rd class.**
 # Limitations of this EDA
 * **No use of Seaborn**
-* **The data in the country column is mixed and hence firstly we have to seperate the countries first to draw some conclusion.**
+* **The dataset contains some columns whose meanings has to be specified as it is not easily understandable to normal users.**
+* **The dataset addresses same people with different abbreviations, so to operate on the data firstly we have to commonize the abbreviations.**
 # Outcome
-The analysis helps to understand patterns in Date Added , Release Year , Rating , Duration , Listed In , and Director to extract meaningful insights about the netflix .
+The analysis helps to understand patterns between  Survived , PClass , Sex , Age , Sibsp , Parch , Ticket ,  Fare , Cabin , Embarked to extract meaningful insights about the survival and the priority given to the passenger.
 # Author
 Kavya Patel
